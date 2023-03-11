@@ -1,6 +1,10 @@
 body {
   margin: 0;
   background-color: #a5a5a5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
@@ -24,9 +28,31 @@ header .nav-items {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  font-size: 18px;
+  font-size: 16px;
 }
 header .nav-items a {
   text-decoration: none;
   color: #004a60;
+  font-size: 16px;
+}
+
+footer {
+  background-color: #ffb6b6;
+  padding: 16px;
+  text-align: center;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 24px;
+}
+footer .social-media a i {
+  color: #1C3C5C;
+  font-size: 24px;
+}
+footer .info {
+  color: rgb(41, 40, 40);
+}
+footer .info p {
+  margin: 5px 0;
 }/*# sourceMappingURL=index.css.map */
