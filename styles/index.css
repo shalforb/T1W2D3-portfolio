@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background-color: #a5a5a5;
+}
+
+header {
+  background-color: #ffb6b6;
+  padding: 16px;
+  text-align: center;
+}
+header .logo-name {
+  margin-bottom: 24px;
+}
+header .name {
+  font-size: 28px;
+}
+header .coder-text {
+  color: #45A7C5;
+}
+header .academy-text {
+  color: #1c3C5C;
+}
+header .nav-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+header .nav-items a {
+  text-decoration: none;
+  color: #004a60;
+}/*# sourceMappingURL=index.css.map */
