@@ -1,0 +1,18 @@
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main article {
+  border: 1px solid red;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px 0px;
+  background-color: #45A7C5;
+  padding: 24px;
+  text-align: center;
+}
+main article section .service-image {
+  width: 350px;
+  border-radius: 16px;
+}/*# sourceMappingURL=services.css.map */
