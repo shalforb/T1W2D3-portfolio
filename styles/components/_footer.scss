@@ -1,0 +1,27 @@
+@import "../defaults/color";
+@import "./utils";
+
+footer {
+    @include background-stuff();
+
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 24px;
+
+        a {
+            i {
+                color: $secondary-color;
+                font-size: 24px;
+            }
+        }
+    }
+    
+    .info {
+        color: rgb(41, 40, 40);
+
+        p {
+            margin: 5px 0;
+        }
+    }
+}

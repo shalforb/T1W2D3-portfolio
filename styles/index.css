@@ -1,12 +1,3 @@
-body {
-  margin: 0;
-  background-color: #a5a5a5;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 header {
   background-color: #ffb6b6;
   padding: 16px;
@@ -22,7 +13,7 @@ header .coder-text {
   color: #45A7C5;
 }
 header .academy-text {
-  color: #1c3C5C;
+  color: #1C3C5C;
 }
 header .nav-items {
   width: 100%;
@@ -57,11 +48,6 @@ header .nav-items a {
     margin-right: auto;
   }
 }
-main section .jumbotron img {
-  height: 300px;
-  width: 100%;
-}
-
 footer {
   background-color: #ffb6b6;
   padding: 16px;
@@ -80,5 +66,26 @@ footer .info {
   color: rgb(41, 40, 40);
 }
 footer .info p {
+  margin: 5px 0;
+}
+
+body {
+  margin: 0;
+  background-color: #a5a5a5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main section .jumbotron img {
+  height: 300px;
+  width: 100%;
+}
+
+.info {
+  color: #1C3C5C;
+}
+.info p {
   margin: 5px 0;
 }/*# sourceMappingURL=index.css.map */

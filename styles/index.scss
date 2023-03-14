@@ -1,10 +1,6 @@
-$primary-background: #ffb6b6;
-
-@mixin background-stuff() {
-    background-color: $primary-background;
-    padding: 16px;
-    text-align: center;
-}
+@import "./defaults/color";
+@import "./components/header";
+@import "./components/footer";
 
 body {
     margin: 0;
@@ -13,63 +9,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-header {
-   @include background-stuff();
-
-    .logo-name {
-        margin-bottom: 24px
-    }
-        .name {
-            font-size: 28px;
-        }
-            .coder-text {
-                color: #45A7C5;
-            }
-
-            .academy-text {
-                color: #1c3C5C;
-            }
-    .nav-items {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        font-size: 16px;
-
-        a {
-            text-decoration: none;
-            color: #004a60;
-            font-size:16px;
-        }
-    }
-
-}
-
-@media screen and (min-width: 600px) {
-    header {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-
-        .logo-name {
-            margin-bottom: 0;
-            .name {
-                margin-bottom: 0;
-            }
-        }
-        .nav-items {
-            width: 50%;
-        }
-    }
-    
-    footer {
-        .social-media {
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
 }
 
 main {
@@ -83,27 +22,11 @@ main {
     }
 }
 
-footer {
-    @include background-stuff();
+.info {
+    color: $secondary-color;
 
-    .social-media {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 24px;
-
-        a {
-            i {
-                color: #1C3C5C;
-                font-size: 24px;
-            }
-        }
-    }
-    
-    .info {
-        color: rgb(41, 40, 40);
-
-        p {
-            margin: 5px 0;
-        }
+    p {
+        margin: 5px 0;
     }
 }
+
