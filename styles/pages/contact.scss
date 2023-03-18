@@ -1,0 +1,75 @@
+@import "../defaults/color";
+@import "../defaults/breakpoint";
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: $secondary-color;
+}
+
+form {
+
+    .form-elements {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+
+        label {
+            font-size: 1.2rem;
+        }
+
+        .form-input {
+            border: $primary-color solid 1px;
+            border-radius: 4px;
+            outline: none;
+            font-size: 1.2rem;
+
+            &:not(.form-textarea) {
+                height: 32px;
+            }
+
+            &:focus {
+                box-shadow: 0 0 8px 3px $primary-color;
+            }
+        }
+    }
+       
+    .btn-div {
+        text-align: center;
+
+        #submit {
+            height: 40px;
+            min-width: 120px;
+            background-color: $primary-color;
+            color: $secondary-color;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+            font-size: 1.2rem;
+        }
+
+            &:hover {
+                cursor: pointer;
+                background-color: #45A7C590;
+            }
+    }
+}
+
+@media screen and (min-width: $medium) {
+    main {
+        form {
+            .form-elements {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .form-input {
+                width: 70%;
+            }
+        }
+    }
+}
